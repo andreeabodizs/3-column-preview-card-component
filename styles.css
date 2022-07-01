@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+.background-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--veryLightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.multiple-cards {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  border-radius: 10px;
+}
+.card-left {
+  background-color: var(--brightOrange);
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0px 0px 10px;
+}
+.card-center {
+  background-color: var(--darkCyan);
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-right {
+  background-color: var(--veryDarkCyan);
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+}
+.multiple-elements {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  width: 55px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.header {
+  color: var(--veryLightGray);
+  margin-bottom: 20px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.description {
+  height: 200px;
+  color: var(--transparentWhite);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+.learn-more {
+  width: 120px;
+  height: 40px;
+  background-color: var(--veryLightGray);
+  border: none;
+  border-radius: 23px;
+}
+.orange {
+  color: var(--brightOrange);
+}
+.dark-cyan {
+  color: var(--darkCyan);
+}
+.very-dark-cyan {
+  color: var(--veryDarkCyan);
+}
+
+.orange:hover {
+  background-color: var(--brightOrange);
+  color: var(--veryLightGray);
+  border: 2px solid var(--veryLightGray);
+  cursor: pointer;
+}
+.dark-cyan:hover {
+  background-color: var(--darkCyan);
+  color: var(--veryLightGray);
+  border: 2px solid var(--veryLightGray);
+  cursor: pointer;
+}
+
+.very-dark-cyan:hover {
+  background-color: var(--veryDarkCyan);
+  color: var(--veryLightGray);
+  border: 2px solid var(--veryLightGray);
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .background-wrapper {
+    height: 100%;
+  }
+  .multiple-cards {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .card-center,
+  .card-left,
+  .card-right {
+    width: 100%;
+    height: 30%;
+  }
+  .card-left {
+    margin-top: 50px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .card-right {
+    margin-bottom: 50px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .multiple-elements {
+    height: 100%;
+  }
+  .icon {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .description {
+    margin-bottom: 20px;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
+  .learn-more {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .multiple-cards {
+    width: 90%;
+  }
+  .multiple-elements {
+    width: 85%;
+  }
+  .description {
+    margin-bottom: 70px;
+    font-size: 13px;
+    line-height: 20px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .multiple-cards {
+    width: 90%;
+  }
+  .multiple-elements {
+    width: 85%;
+  }
+  .description {
+    height: 120px;
+  }
+}
+
+@media (max-width: 250px) {
+  .description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
